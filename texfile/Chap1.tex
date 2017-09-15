@@ -842,12 +842,12 @@ The completeness relation in the multiparticle is given as follows,
 
 \section{Creation operator \& destruction operator}
 
-So far, we have constructed a complete orthonormal set of states in the multiparticle space. With these constructions in hand, we are now ready to define creation and destruction operators. These operators change the number of particles, so that they connect states of different numbers of particles. We will see that allthe physical operators are expressed in terms of creation and destruction operators. 
+So far, we have constructed a complete orthonormal set of states in the multiparticle space. With these constructions in hand, we are now ready to define creation and destruction operators. These operators change the number of particles, so that they connect states of different numbers of particles. We will see that all the physical operators are expressed in terms of creation and destruction operators. 
 
 Let $|\varphi\rangle$ be any one-particle state. We define $a^\dagger$ of $\varphi$ to be that linear operator which satisfies this, for any n-particle states $|\psi_1, \cdots,\psi_n\rangle$. 
 
 \begin{align}
-a^\dagger{\varphi}|\psi_1,\cdots,\psi_n\rangle = |\varphi,\psi_1,\cdots,\psi_n\rangle \tag{e}\\
+a^\dagger(\varphi)|\psi_1,\cdots,\psi_n\rangle = |\varphi,\psi_1,\cdots,\psi_n\rangle \tag{e}\\
 \quad\text{for any}|\psi_1,\cdots,\psi_n\rangle \label{Eqs1.6.1}
 \end{align}
 
@@ -867,10 +867,10 @@ To find the effect of $a(\varphi)$ on an $n$-particle state $|\psi_1,\psi_2,\cdo
 &= (\langle \psi_1,\cdots,\psi_n|\varphi,x_1,\cdots,x_{n-1}\rangle)^*\\
 &= 
 \begin{vmatrix}
-\langle\psi_1|\phi\rangle & \langle\psi_1|x_1\rangle & \cdots & \langle\psi_1|x_{n-1}\rangle\\
-\langle\psi_2|\phi\rangle & \langle\psi_2|x_1\rangle & \cdots & \langle\psi_2|x_{n-1}\rangle\\
+\langle\psi_1|\varphi\rangle & \langle\psi_1|x_1\rangle & \cdots & \langle\psi_1|x_{n-1}\rangle\\
+\langle\psi_2|\varphi\rangle & \langle\psi_2|x_1\rangle & \cdots & \langle\psi_2|x_{n-1}\rangle\\
 \cdots & \cdots & \cdots & \cdots \\
-\langle\psi_n|\phi\rangle & \langle\psi_n|x_1\rangle & \cdots & \langle\psi_n|x_{n-1}\rangle
+\langle\psi_n|\varphi\rangle & \langle\psi_n|x_1\rangle & \cdots & \langle\psi_n|x_{n-1}\rangle
 \end{vmatrix}_{\xi}^*\\
 &= \left\{\sum_{k=1}^n \xi^{k-1}\langle\psi_k|\varphi\rangle
 \begin{vmatrix}
@@ -949,7 +949,7 @@ These three relations are the fundamental ``commutation relations'' for creation
 
 Where one-particle states $|\alpha\rangle$ and $|\beta\rangle$ are from a complete orthonormal set of one-particle states, $\{|1\rangle,|2\rangle,\cdots\}$
 
-Let us next compare these commutation relations with raising and lowering operators for linear harmonic osciallators. 
+Let us next compare these commutation relations with raising and lowering operators for linear harmonic oscillators. 
 
 For boson case, we further define an orthonormal basis for the multiparticle space as 
 
